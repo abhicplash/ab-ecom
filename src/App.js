@@ -6,6 +6,7 @@ import Product from "./components/Pages/Product";
 import SingleProduct from "./components/Pages/SingleProduct";
 import PNF from "./components/Pages/PNF";
 import About from "./components/Pages/About";
+import Cart from "./components/Pages/Cart";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/product/:id" element={<SingleProduct />} />
           <Route path="*" element={<PNF />} />
         </Routes>

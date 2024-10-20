@@ -1,0 +1,33 @@
+.HomeProducts-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem 0;
+}
+.hm-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.shopnowbtn-home {
+  text-align: center;
+  width: 8.5rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--black);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .HomeProducts-container {
+    gap: 2.5rem;
+  }
+}

@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: center;
   gap: 10%;
+  position: relative;
+  z-index: 120;
 }
 .new-head {
   font-size: 2.5rem;
@@ -50,6 +52,9 @@
   /* border: 1px solid; */
   justify-content: space-between;
 }
+.list-larger a{
+  color: var(--black );
+}
 
 @media (max-width: 768px) {
   .list-larger {
@@ -71,14 +76,14 @@
     position: absolute;
     right: 0;
     width: 100%;
-    top: 9vh;
+    top: 8.5vh;
     list-style: none;
     gap: 10px;
     text-transform: capitalize;
     background-color: var(--white);
     text-align: center;
-    height: 70vh;
-    animation: slideup ease-in 0.3s forwards;
+    height: 100vh;
+    animation: slideup ease-in 0.1s forwards;
   }
 }
 @keyframes slideup {

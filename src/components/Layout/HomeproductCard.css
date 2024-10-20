@@ -1,0 +1,55 @@
+.HomeproductCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgwrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.imghomecard {
+  width: 25rem;
+  height: 30rem;
+  /* position: relative;
+  z-index: 10; */
+  /* overflow: hidden; */
+}
+.imgwrapper:hover .imghomecard {
+  transform: scale(115%);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.btnhomecard {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  bottom: 2rem;
+  /* left: 35%; */
+  position: absolute;
+  z-index: 200;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  background-color: var(--white);
+  border: none;
+  outline: none;
+}
+.btnhomecard:hover {
+  background-color: var(--btnorange);
+  color: white;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 768px) {
+  .imghomecard {
+    width: 16rem;
+    height: 20rem;
+  }
+}
