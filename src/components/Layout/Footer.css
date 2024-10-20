@@ -1,0 +1,27 @@
+.footer-container {
+  width: 100%;
+  min-height: 70vh;
+  background-color: var(--gray);
+  display: flex;
+  justify-content: space-around;
+}
+.head-foot {
+  text-transform: uppercase;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-con-container {
+  display: flex;
+  align-items: center;
+  color: #a19d9d;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
