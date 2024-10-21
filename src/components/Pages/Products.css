@@ -12,6 +12,7 @@
   /* border-radius: 15px; */
   box-shadow: 1px 1px 10px 1px var(--gray);
   position: relative;
+  /* background-color: red; */
 }
 
 .product-container {
