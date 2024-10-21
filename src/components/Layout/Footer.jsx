@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-left">
         <h3 className="head-foot">Get in touch</h3>
         <ul className="footer-list">
-          <li>
+          <li className="footer-details">
             Any questions? Let us know in store at 8th floor, 379 Hudson St, New
             York, NY 10018 <br />
             <div className="footer-con-container">
@@ -28,21 +28,19 @@ const Footer = () => {
       <div className="footer-middle">
         <h3 className="head-foot">Categories</h3>
         <ul className="footer-list">
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
+          <li>Men </li>
+          <li>Women </li>
+          <li>Electronics</li>
+          <li>Jwellery</li>
         </ul>
       </div>
       <div className="footer-right">
         <h3 className="head-foot">Links</h3>
         <ul className="footer-list">
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Product</li>
+          <li>Contact us</li>
         </ul>
       </div>
     </div>

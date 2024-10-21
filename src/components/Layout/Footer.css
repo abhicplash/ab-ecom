@@ -1,9 +1,10 @@
 .footer-container {
   width: 100%;
-  min-height: 70vh;
+  min-height: 50vh;
   background-color: var(--gray);
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .head-foot {
   text-transform: uppercase;
@@ -18,6 +19,9 @@
   font-size: 1.3rem;
   margin-top: 10px;
   gap: 0.5rem;
+}
+.footer-details {
+  width: 12rem;
 }
 @media (max-width: 768px) {
   .footer-container {

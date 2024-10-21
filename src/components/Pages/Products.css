@@ -1,30 +1,88 @@
 .imgproduct {
-  width: 5rem;
-  height: 7rem;
+  width: 11.5rem;
+  height: 14rem;
 }
-.productcard {
+.productImgcard {
   display: flex;
-  /* flex-direction: column; */
-  width: 16rem;
-  height: 12rem;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border: 1px solid var(--gray);
-  /* padding: 5px; */
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px 1px var(--gray);
+  width: 13rem;
+  height: 16rem;
+  /* border-radius: 15px; */
+  box-shadow: 1px 1px 10px 1px var(--gray);
+  position: relative;
 }
+
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: end;
+  /* text-align: center; */
   gap: 2rem;
   padding: 3rem 0;
+  background: linear-gradient(to bottom, var(--white), var(--gray));
 }
-.product-head{
-    font-weight: 300;
-    font-size: 13px;
-    width: 50%;
+.product-head {
+  font-weight: 300;
+  font-size: 13px;
+  width: 12rem;
+  /* align-items: center; */
+}
+.cardshadow {
+  display: none;
+  /* border-radius: 15px; */
+}
+.singleCard {
+  background-color: var(--white);
+  /* border-radius: 15px; */
+}
+.productImgcard a {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productpricename-details {
+  display: flex;
+  flex-direction: column;
+}
+.productImgcard:hover  .cardshadow {
+  transition-duration: 5s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.249);
+  width: 13rem;
+  height: 16rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: end;
+}
+.AddToCart {
+  background-color: var(--black);
+  color: var(--white);
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 20px;
+  cursor: pointer;
+  animation: cartbtnup 0.5s forwards;
+  position: relative;
+}
+.AddToCart:hover{
+background-color: var(--btnorange) ;
+}
+@keyframes cartbtnup {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 1.5rem;
+  }
 }

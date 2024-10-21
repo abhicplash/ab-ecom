@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../Layout/Layout";
 import "./Products.css";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -16,11 +17,25 @@ const Product = () => {
     <Layout>
       <div className="product-container">
         {products.map((list, index) =>
-          <div key={index} className="productcard">
-            <img src={list.image} alt="" className="imgproduct" />
-            <h4 className="product-head">
-              {list.title}
-            </h4>
+          <div key={index}>
+            <div className="singleCard">
+              <div className="productImgcard">
+                <Link to={`/product/${list.id}`}>
+                  <div className="cardshadow">
+                    <button className="AddToCart">Add to cart</button>
+                  </div>
+                </Link>
+                <img src={list.image} alt="" className="imgproduct" />
+              </div>
+            </div>
+            <div className="productpricename-details">
+              <span className="product-head">
+                {list.title.slice(0, 23)}
+              </span>
+              <span className="price">
+                ${list.price}
+              </span>
+            </div>
           </div>
         )}
       </div>

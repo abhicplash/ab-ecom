@@ -1,0 +1,20 @@
+.About-container {
+  width: 100%;
+}
+.pagetop {
+  width: 100%;
+  height: 50vh;
+  /* background-color: red; */
+  background: url("../../assets/about/pt.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .pagetop {
+    height: 40vh;
+  }
+}

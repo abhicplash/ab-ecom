@@ -4,7 +4,11 @@ import Layout from "../Layout/Layout";
 const Contact = () => {
   return (
     <Layout>
-      <div>Contact</div>
+     <div className="About-container">
+        <div className="pagetop">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
     </Layout>
   );
 };
