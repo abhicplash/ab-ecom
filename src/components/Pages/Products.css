@@ -10,7 +10,7 @@
   width: 13rem;
   height: 16rem;
   /* border-radius: 15px; */
-  box-shadow: 1px 1px 10px 1px var(--gray);
+  /* box-shadow: 1px 1px 10px 1px var(--gray); */
   position: relative;
   /* background-color: red; */
 }
@@ -23,7 +23,7 @@
   /* text-align: center; */
   gap: 2rem;
   padding: 3rem 0;
-  background: linear-gradient(to bottom, var(--white), var(--gray));
+  /* background: linear-gradient(to bottom, var(--white), var(--gray)); */
 }
 .product-head {
   font-weight: 300;

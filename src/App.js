@@ -7,11 +7,13 @@ import SingleProduct from "./components/Pages/SingleProduct";
 import PNF from "./components/Pages/PNF";
 import About from "./components/Pages/About";
 import Cart from "./components/Pages/Cart";
+import ScrollToTop from "./components/Layout/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

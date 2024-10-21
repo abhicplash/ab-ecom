@@ -1,7 +1,8 @@
 .footer-container {
   width: 100%;
   min-height: 50vh;
-  background-color: var(--gray);
+  /* background-color:  var(--gray); */
+  background: linear-gradient(to bottom ,white,var(--gray));
   display: flex;
   justify-content: space-around;
   align-items: center;
