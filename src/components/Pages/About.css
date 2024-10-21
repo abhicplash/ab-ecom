@@ -16,5 +16,6 @@
 @media (max-width: 768px) {
   .pagetop {
     height: 40vh;
+    font-size: 1.6rem;
   }
 }
