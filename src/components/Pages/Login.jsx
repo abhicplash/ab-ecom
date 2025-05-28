@@ -8,7 +8,7 @@ import Layout from "../Layout/Layout";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // 🚀 navigation hook
+  const navigate = useNavigate();  
 
   const handleLogin = async (e) => {
     e.preventDefault();
