@@ -7,5 +7,5 @@ export const homeproductData = [
   { name: "men", img: image3 },
   { name: "women", img: image4 },
   { name: "electronics", img: image1 },
-  { name: "jwellery", img: image2 }
+  { name: "jewelery", img: image2 }
 ];

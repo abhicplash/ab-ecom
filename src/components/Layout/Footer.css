@@ -1,14 +1,14 @@
 .footer-container {
   width: 100%;
   min-height: 50vh;
-  /* background-color:  var(--gray); */
-  background: linear-gradient(to bottom ,white,var(--gray));
+  background: linear-gradient(to bottom, white, var(--gray));
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .head-foot {
   text-transform: uppercase;
+  text-align: center;
 }
 .footer-list {
   list-style: none;
@@ -27,6 +27,9 @@
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* justify-content: start; */
   }
 }

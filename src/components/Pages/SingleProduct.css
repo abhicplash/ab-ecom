@@ -1,8 +1,70 @@
-.SingleProduct-dontainer {
+/* Shimmer wrapper and animation */
+.shimmer-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #e2e2e2;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.shimmer {
+  width: 100%;
+  height: 100%;
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(to right, #e2e2e2 0%, #f8f8f8 50%, #e2e2e2 100%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Shimmer blocks for SingleProduct placeholders */
+.shimmer-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.shimmer-title {
+  width: 60%;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.shimmer-category {
+  width: 40%;
+  height: 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.shimmer-description {
+  width: 90%;
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.shimmer-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.SingleProduct-container {
   width: 100%;
   min-height: 60vh;
   /* background-color: var(--gray); */
-  background: linear-gradient(to bottom, var(--white), var(--gray));
+  /* background: linear-gradient(to bottom, var(--white), var(--gray)); */
+  background-color: re;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +81,7 @@
   border-radius: 10px;
   box-shadow: 1px 1px 10px 1px var(--black);
   /* background-color: #fffefe; */
-  background: linear-gradient(to right, #fffefe, #fffefe, #fffefe, var(--gray));
+  /* background: linear-gradient(to right, #fffefe, #fffefe, #fffefe, var(--gray)); */
 }
 .productImage-wrapper {
   width: 50%;
@@ -75,7 +137,7 @@
   .product-wrapper {
     flex-direction: column;
     text-align: center;
-    width: 95%;
+    width: 80%;
     padding: 2rem 0;
     background: linear-gradient(
       to bottom,

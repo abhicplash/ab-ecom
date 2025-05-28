@@ -52,10 +52,27 @@
   /* border: 1px solid; */
   justify-content: space-between;
 }
-.list-larger a{
-  color: var(--black );
+.list-larger a {
+  color: var(--black);
 }
-
+.cart-Logo-wrapper {
+  position: relative;
+}
+.NoofcartItems {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: var(--black);
+  color: var(--gray);
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 @media (max-width: 768px) {
   .list-larger {
     display: none;

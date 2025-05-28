@@ -4,8 +4,10 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import "./Navbar.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const cartItems = useSelector((store) => store.ttb.items);
   const [view, setView] = useState(false);
   return (
     <div>
@@ -15,29 +17,29 @@ const Navbar = () => {
           <h1 className="new-head">NEW</h1>
         </Link>
 
-        {view
-          ? <ul className="list-mob">
-              <Link to={"/"}>
-                <li>home</li>
-              </Link>
-              <Link to={"/about"}>
+        {view ? (
+          <ul className="list-mob">
+            <Link to={"/"}>
+              <li>home</li>
+            </Link>
+            {/* <Link to={"/about"}>
                 <li>About</li>
-              </Link>
-              <Link to={"/product"}>
-                <li>Products</li>
-              </Link>
-              <Link to={"/contact"}>
-                <li>Contact</li>
-              </Link>
-            </ul>
-          : null}
+              </Link> */}
+            <Link to={"/product"}>
+              <li>Products</li>
+            </Link>
+            <Link to={"/contact"}>
+              <li>Contact</li>
+            </Link>
+          </ul>
+        ) : null}
         <ul className="list-larger">
           <Link to={"/"}>
             <li>home</li>
           </Link>
-          <Link to={"/about"}>
+          {/* <Link to={"/about"}>
             <li>About</li>
-          </Link>
+          </Link> */}
           <Link to={"/product"}>
             <li>Products</li>
           </Link>
@@ -47,7 +49,14 @@ const Navbar = () => {
         </ul>
         <div className="navicon-wrapper">
           <Link to={"/cart"}>
-            <LiaShoppingBagSolid />
+            <div className="cart-Logo-wrapper">
+              <div className="CartLogo">
+                <LiaShoppingBagSolid />
+              </div>
+              <div className="NoofcartItems">
+                <span>{cartItems.length}</span>
+              </div>
+            </div>
           </Link>
           <RxHamburgerMenu
             className="hamburger"

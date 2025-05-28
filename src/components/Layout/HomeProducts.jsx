@@ -1,4 +1,3 @@
-import React from "react";
 import "./HomeProducts.css";
 import HomeproductCard from "./HomeproductCard";
 import { homeproductData } from "../../utils/homeproductData";
@@ -20,3 +19,5 @@ const HomeProducts = () => {
 };
 
 export default HomeProducts;
+
+ 
