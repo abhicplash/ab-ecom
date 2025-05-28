@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      alert("Login successful!");
+      // alert("Login successful!");
       navigate("/"); // ✅ redirect to Home page
     } catch (error) {
       alert(error.message);
