@@ -37,7 +37,7 @@ A fully functional e-commerce web application built with **React**, **Redux**, a
 | Redux        | State management for cart functionality |
 | Firebase     | Auth (Email/Password)                   |
 | React Router | Page navigation and route protection    |
-| CSS          | Custom styles without Tailwind          |
+| CSS          | Custom styles                           |
 | Vercel       | Hosting and deployment                  |
 
 ---
