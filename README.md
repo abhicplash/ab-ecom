@@ -1,19 +1,43 @@
-# NEW EXPO- E-Commerce React App
+# 🛒 NEW EXPO E-Commerce
 
-This is a React-based e-commerce project with Redux for state management, fetching product data from a fake API.
+A fully functional e-commerce web application built with **React**, **Redux**, and **Firebase Authentication**. Users can browse products, add them to the cart, sign up, log in, and log out securely. The application is responsive and deployed on **Vercel**.
 
-## Features
+### 🔗 Live Demo
 
-- Product listing with categories
-- Add to cart functionality with Redux
-- Fetch product data from [Fake Store API](https://fakestoreapi.com/)
-- Responsive design and loading states
-- Navigation using React Router
+[https://ab-ecom-psi.vercel.app](https://ab-ecom-psi.vercel.app)
 
-## Tech Stack
+---
 
-- React
-- Redux Toolkit
-- React Router
-- CSS (initially styled by using TailwindCSS later changed)
-- Fetch API
+## ✨ Features
+
+- 🔐 **Authentication**
+  - User Sign Up & Login (Email/Password)
+  - Protected Routes (only logged-in users can access product/cart pages)
+  - Firebase Authentication
+- 🛍️ **Product Listing**
+  - Product Grid View
+  - Single Product Page with Details
+- 🛒 **Shopping Cart**
+  - Add to Cart
+  - Cart item count badge
+  - Redux-powered global state
+- 📦 **Routing**
+  - React Router v6
+  - Scroll-to-top on route change
+- 📱 **Responsive Design**
+  - Mobile-friendly Navbar with Hamburger Menu
+
+---
+
+## 📦 Tech Stack
+
+| Tech         | Description                             |
+| ------------ | --------------------------------------- |
+| React        | UI framework                            |
+| Redux        | State management for cart functionality |
+| Firebase     | Auth (Email/Password)                   |
+| React Router | Page navigation and route protection    |
+| CSS          | Custom styles without Tailwind          |
+| Vercel       | Hosting and deployment                  |
+
+---
