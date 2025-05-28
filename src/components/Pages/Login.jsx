@@ -8,16 +8,16 @@ import Layout from "../Layout/Layout";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
       // alert("Login successful!");
-      navigate("/"); // ✅ redirect to Home page
+      navigate("/");
     } catch (error) {
-      alert(error.message);
+      alert("Invalid Credentials");
     }
   };
 
