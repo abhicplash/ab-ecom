@@ -6,7 +6,7 @@ const HomeBanner = () => {
   return (
     <div className="banner-container">
       <div className="banner-texts">
-        <h1 className="homebanner-head">new arrivals</h1>
+        <h1 className="homebanner-head">enjoy the <br />new shopping <br />experience</h1>
         <Link to={"/product"}>
           <button className="shopbtn">shop now</button>
         </Link>
