@@ -1,4 +1,4 @@
-# AB E-Commerce React App
+# NEW EXPO- E-Commerce React App
 
 This is a React-based e-commerce project with Redux for state management, fetching product data from a fake API.
 
