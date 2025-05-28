@@ -8,8 +8,19 @@ const useProducts = (id) => {
 
     async function getsingleProductData() {
       try {
-        const data = await fetch(`https://fakestoreapi.com/products/${id}`);
-        const json = await data.json();
+        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch product. Status: ${response.status}`);
+        }
+
+        const text = await response.text();
+
+        if (!text) {
+          throw new Error("Response body is empty");
+        }
+
+        const json = JSON.parse(text);
         setSingle(json);
       } catch (error) {
         console.error("Failed to fetch product:", error);
@@ -19,6 +30,7 @@ const useProducts = (id) => {
 
     getsingleProductData();
   }, [id]);
+
   return single;
 };
 
