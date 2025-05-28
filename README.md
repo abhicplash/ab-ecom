@@ -15,5 +15,5 @@ This is a React-based e-commerce project with Redux for state management, fetchi
 - React
 - Redux Toolkit
 - React Router
-- CSS (or Tailwind, depending on your styling)
+- CSS (initially styled by using TailwindCSS later changed)
 - Fetch API
