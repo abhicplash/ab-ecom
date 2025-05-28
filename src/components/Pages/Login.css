@@ -1,9 +1,10 @@
 .login-wrapper {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: radial-gradient(black,gray); */
   background-color: var(--gray);
 }
 .login-wrapper form {

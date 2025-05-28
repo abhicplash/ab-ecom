@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Layout from "../Layout/Layout";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -30,27 +31,29 @@ const SignUp = () => {
   }, [user, navigate]);
 
   return (
-    <div className="login-wrapper">
-      <form onSubmit={handleSignUp}>
-        <h2>Sign Up</h2>
-        <input
-          type="email"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Sign Up</button>
-        <p>
-          Already have an account? <a href="/login">Login here</a>
-        </p>
-      </form>
-    </div>
+    <Layout>
+      <div className="login-wrapper">
+        <form onSubmit={handleSignUp}>
+          <h2>Sign Up</h2>
+          <input
+            type="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">Sign Up</button>
+          <p>
+            Already have an account? <a href="/login">Login here</a>
+          </p>
+        </form>
+      </div>
+    </Layout>
   );
 };
 
