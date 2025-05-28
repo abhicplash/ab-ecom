@@ -8,6 +8,7 @@
   background-color: var(--gray);
 }
 .login-wrapper form {
+    width: 17rem;
   background: radial-gradient(var(--gray), var(--white));
   /* border: 1px solid black; */
   box-shadow: 0.5px 0.5px 10px 1px rgb(143, 143, 143);
@@ -25,7 +26,6 @@
   outline: none;
   border: 1px solid black;
   border-radius: 2px;
-
 }
 .login-wrapper form button {
   border: none;
@@ -36,9 +36,17 @@
   background-color: var(--black);
   border-radius: 2px;
 }
-
+.login-wrapper form p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 @media (max-width: 768px) {
   .login-wrapper form {
+    width: 15rem;
     padding: 2rem 1.2rem;
+  }
+  .login-wrapper{
+    padding: 1rem 0;
   }
 }
